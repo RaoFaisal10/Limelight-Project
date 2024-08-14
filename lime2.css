@@ -1,0 +1,15 @@
+.videoo{
+justify-content: center;
+text-align: center;
+height: 350px
+}
+.thickk-line {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 89%;
+    height: 1px; 
+    background-color: rgb(1, 1, 1);
+    margin-top: 4px;
+    margin-left: 52px;
+}

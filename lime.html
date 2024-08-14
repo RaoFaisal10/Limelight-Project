@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIME LIGHT</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="/lime.css">
+<link rel="stylesheet" href="/lime.js">
+</head>
+<body>
+    <div style="height:24px; position:sticky">
+        <p class="text-center custom-text-color h8">Free delivery for orders above Rs 4999 within Pakistan</p>
+    </div>
+<div class="stickyy">
+    <div class="p-3 positttion text-white" style="height: 50px; background-color:rgb(0, 0, 0); position: relative;">
+        <!-- whatsapp icon -->
+        <div style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%);">
+            <a href="https://wa.me/qr/GCD2LBDZMXLJB1">
+                <img loading="lazy" src="https://cdn.shopify.com/s/files/1/2635/3244/files/40_x_40_Whatsapp_PNG.png?v=1642676551" alt="Lime Light Whatsapp" width="26" height="26">
+            </a>
+        </div>
+
+        <!-- phone icon -->
+        <div style="position: absolute; left: 60px; top: 50%; transform: translateY(-50%);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+            </svg>
+        </div>
+
+        <!-- search icon -->
+        <div style="position: absolute; left: 100px; top: 50%; transform: translateY(-50%);">
+          <input class="search__input field__input" id="Search-In-Modal" type="search" 
+          style="border-radius: 80px; width: 200px; border-radius: 2px;" ... >
+   
+            <input type="hidden" name="options[prefix]" value="last" placeholder="" >
+        </div>
+
+        <!-- lime light logo -->
+        <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
+            <a href="http://127.0.0.1:5500/limelight/lime.html">
+                <img src="//www.limelight.pk/cdn/shop/files/LimeLight_New_Logo_Source_File-01_e519a0d0-8d0d-428a-9206-de5487cd8939_200x.svg?v=1683899796" loading="lazy" width="300" height="26" alt="Limelightpk">
+            </a>
+        </div>
+
+            <!-- cart logo -->
+            <a href="http://127.0.0.1:5500/limelight/lime.html" class="cart-logo" id="cart-icon-bubble">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 46 38" fill="none">
+                  <path d="M14.1982 31.1837C12.5533 31.1837 11.2197 32.5557 11.2197 34.2482C11.2197 35.9406 12.5533 37.3127 14.1982 37.3127C15.8432 37.3127 17.1768 35.9406 17.1768 34.2482C17.1768 32.5557 15.8432 31.1837 14.1982 31.1837Z" fill="white"></path>
+                  <path d="M35.0474 31.1837C33.4024 31.1837 32.0688 32.5557 32.0688 34.2482C32.0688 35.9406 33.4024 37.3127 35.0474 37.3127C36.6924 37.3127 38.0259 35.9406 38.0259 34.2482C38.0259 32.5557 36.6924 31.1837 35.0474 31.1837Z" fill="white"></path>
+                  <path d="M8.24121 0.538818C8.95308 0.538818 9.56374 1.05677 9.70186 1.77213L9.70781 1.80478L13.9584 26.5869H36.5371C37.3498 26.5869 38.0105 27.2567 38.0261 28.089L38.0264 28.1192C38.0264 28.9553 37.3754 29.6351 36.5664 29.6511L36.5371 29.6514H12.709C11.9971 29.6514 11.3865 29.1335 11.2483 28.4181L11.2424 28.3855L6.99172 3.6033H2.28418C1.47148 3.6033 0.810819 2.93353 0.795205 2.10121L0.794922 2.07106C0.794922 1.2349 1.4459 0.555175 2.25487 0.539109L2.28418 0.538818H8.24121Z" fill="white"></path>
+                  <path d="M9.73096 5.1355L38.6066 5.1355C39.2762 5.13502 39.9107 5.44359 40.3354 5.97623C40.7512 6.49777 40.9228 7.18029 40.8065 7.84247L40.7987 7.88471L38.118 21.6751C37.9112 22.7379 37.0116 23.5059 35.9624 23.5221L35.927 23.5224H12.7095C11.887 23.5224 11.2202 22.8364 11.2202 21.9902C11.2202 21.154 11.8712 20.4743 12.6802 20.4582L12.7095 20.4579H35.317L37.6999 8.19989L9.73096 8.19998C8.91825 8.19998 8.2576 7.53021 8.24198 6.69789L8.2417 6.66774C8.2417 5.83158 8.89268 5.15185 9.70165 5.13579L9.73096 5.1355Z" fill="white"></path>
+                  
+                </svg>
+                <span class="visually-hidden  carlogo">Cart</span>
+                <div class="cart-count-bubble"><span aria-hidden="true"></span><span class="visually-hidden">0 items</span></div>
+            </a>
+        </div>
+    </div>
+
+    <!-- desktop icons nav -->
+    <nav class="navbar navbar-expand-lg navbrr bg-light">
+      <div class="container-fluid justify-content-between">
+          <!-- Left Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAmFJREFUSEvl1knIjVEcx/HPS+aNcWVnYSND5lKmiNgQC2RFyZBMCymlWFjItEBSNkRKSUJIFBtTkSHWZCEkRZHp+b+dt+77vPfe57n3vvUunN29zzm/7/kP53dOmx4abT3E1Qy4N8ZhStr0QzzH70aCaBS8DEcxMgd5i824XBbeCPgwthYIH8KOMvCy4Pm4mQQfYReepN+TsL8i9XNxpwheFnwL81ItJ+NnTrgvHmMsrmNRd4B74Rv6YxOO1xDdiGP4mvXBEPypBy8TcXTwsySyGNdqCEaUV9O3MXjVKjg6+F0SWYXzNQRX4lz6FmvetwqO9Z8wFPW69mCW5u34mKV8RHfUODT2YXcyiaW4khNegovZvDCXPdjbXeBorJcYlQTvpy7ukzp5Zvr/TXK1fNd32UeZ5upYFE12NoGqBRS2GXWODRaORsAhFkdrAxZgepb+XynyOLsni45Q5W4aBRdGUnZCWfAwzMhcaRrCufrlAD9S5A8yh4v6fy7aQBF4MA5gLaWv0L8p7TuTi1XdQz3wcpzA8IqV35OLVfPq8RhYMfcD1uNSNXItcFzykbaO76dxBC+ycxoR1dKKS2IL1qQJMXdqKkOnNdXAcdPE0RiNiHAh7hXVLPd9VvL0yMDrLOrIRqcsVQOHLW5LQuuy18apBqEd0yPNUaoYXay2GjiiHIAbKdomue3LbiMeBqE5qN45jmMTJh9jBS60QsVqnEkacUd/6dDLRzyx4kkTtY2oWxmVd3RYbvRO+8iDZ1e8l+bgbivUbH1NvTw4DGNCgj2tTE2TG6ipV+RcTfKKl/1/4H9Qfmkf+jdIxwAAAABJRU5ErkJggg=="/>
+          </a>
+          
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="/lime2.html">WOMEN</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">GIRLS</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">MEN</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">ACCESSORIES</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link sale" href="#" style="color: red;">SALE</a>
+                  </li>
+              </ul>
+          </div>
+  
+          <!-- Right Side: Checkout -->
+              <h6>CHECKOUT</h6>
+              
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAW1JREFUSEvtlrsuRUEUhr8jHkAUElFqEbXC5QHwEhrR8BoSUVGIzoO4NCQiwTMIEQpaBPMne5Ix9hzrzOzYpziT7GbPzPrWZdbM36Gl0WmJS9+BR4AZYKgwI5/ALfAS26mLeAvYBoYLoX77uwNvAvuhvRg8Adw1BAzNfDnwGPDsf8bgeeC0mlTk14VOzAK7lY0F4CwFXgSOq8kl4KQQnLQXRzwAp1I9B0y67+iPUphTrf7VgdDQwfrVf9WcN3gAbAAfCQfMYOtZCg1eACvOgaeazWZwGHE3J8I20boHYBW4jDaZweFCa/R+3Zu7fNaiuv8LWHVeBw4Dj83g3FTrKlSdz3NTbU1vGMkVsFzVOd6fFbGlndTHqqvqWzfMYOuVqQtkClAfdxuNg3NK8uPRGTwSrQmBceDeWsAe1kn6yPZjSoHov4TZTgMK0zMk9iSj9kJHU7p6FJiGYt0teXvjwK9xdvpO0PdQvrylrUX8DZOyaB9ap/VCAAAAAElFTkSuQmCC"/>
+          </a>
+      </div>
+  </nav>
+  
+  
+<!-- carousel -->
+<div id="carouselExampleAutoplaying" class="carousel slide p-4 mt-2 pt-1 carousel-id" data-bs-ride="carousel">
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="https://www.limelight.pk/cdn/shop/files/LAWN_UNSTITCHED_swipe_banner_web-desktop_version.jpg?v=1718954807" class="d-block w-100" loading="lazy" alt="...">
+      </div>
+      <div class="carousel-item">
+          <img src="https://www.limelight.pk/cdn/shop/files/Mid-season-sale-banner-_1920x600_b9f22453-98bb-452b-aea5-a94e8b489ce7.jpg?v=1722085484" class="d-block w-100" loading="lazy" alt="...">
+      </div>
+      <div class="carousel-item">
+          <img src="https://www.limelight.pk/cdn/shop/files/web-pc.jpg?v=1720162509" class="d-block w-100" loading="lazy" alt="...">
+      </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+  <!-- thick-line -->
+  <div class="thick-line"></div>
+
+  <!--circlar images (women wear)  -->
+  <div class="women-wear"><h1>Women Wear
+  </h1></div>
+  <div class="circular-image1 circular-images"><div class="container text-center">
+    <div class="row" style="width:100%">
+      <div class="col width:50%; text-align: center; padding-top: 10px;">
+        <img src="https://www.limelight.pk/cdn/shop/files/dailywear_5e709826-db47-41b8-b0e4-0bc3a84a343f_300x.png?v=1722244654" alt=""><br><b>Daily Wear</b>
+      </div>
+      <div class="col width:50%; text-align: center; padding-top: 10px;">
+    <img src="https://www.limelight.pk/cdn/shop/files/glam_300x.png?v=1722244686" alt=""><br><b>GLAM</b>
+      </div>
+      <div class="col width:50%; text-align: center; padding-top: 10px;">
+        <img src="https://www.limelight.pk/cdn/shop/files/signature_300x.png?v=1722245236" alt=""><br><b>SIGNATURE</b>
+      </div>
+      <div class="col width:50%; text-align: center; padding-top: 10px;">
+        <img src="https://www.limelight.pk/cdn/shop/files/formals_300x.png?v=1722245215" alt=""><br><b>FORMAL</b>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- second row(circular images) -->
+<div class="container text-center circular-images ">
+    <div class="row">
+      <div class="col">
+        <img src="https://www.limelight.pk/cdn/shop/files/coords_300x.png?v=1722245324" alt=""><br><b>CO-ORDS</b>
+      </div>
+      <div class="col">
+        <img src="https://www.limelight.pk/cdn/shop/files/eastern_tops_8ec740e5-d124-4d3b-9d97-3d300b20a667_300x.png?v=1722245388" alt=""><br><b>EASTERN TOPS</b>
+      </div>
+      <div class="col">
+        <img src="https://www.limelight.pk/cdn/shop/files/western_2ab2c854-d117-4363-b08d-f7690594342e_300x.png?v=1722245440" alt=""><br><b>WESTERN</b>
+      </div>
+      <div class="col">
+        <img src="https://www.limelight.pk/cdn/shop/files/women_bottoms_300x.png?v=1722245531" alt=""><br><b>BOTTOMS </b>
+      </div>
+    </div>
+  </div>
+    
+  <!-- thick-line -->
+   <br>
+  <div class="thick-line"></div>
+  <div class="women-wear"><h1>Unstiched</h1></div>
+  
+  <!-- circular images (unstiched) -->
+  <div class="circular-image1 circular-images"><div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <img src="https://www.limelight.pk/cdn/shop/files/UNSTITCHED_printed_300x.png?v=1722245940" alt=""><br><b>PRINTED</b>
+      </div>
+      <div class="col">
+    <img src="https://www.limelight.pk/cdn/shop/files/UNSTITCHED_embroided_300x.png?v=1722245940" alt=""><br><b>EMBROIDERED</b>
+      </div>
+      <div class="col">
+        <img src="https://www.limelight.pk/cdn/shop/files/unstitched_bottoms_df455c13-3e77-46fa-94b2-dfffcd7caf43_300x.png?v=1722246035" alt=""><br><b>BOTTOMS</b>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<!-- thick-line -->
+<br>
+<div class="thick-line"></div>
+
+<!-- square images -->
+<div class="container square-images">
+    
+    <div class="row" style="width:100%">
+        <div class="col-6" style="width:50%; text-align: center; ">
+            <strong class="men-girl" style="font-size:24px">MEN</strong>
+            <div style="display: flex; justify-content: flex-end; align-items: flex-end;">
+                <img src="https://www.limelight.pk/cdn/shop/files/Men_2.png?v=1717571456" alt="">
+            </div>
+        </div>
+        <div class="col-6" style="width:50%; ">
+            <strong class="girl-men" style="font-size:24px;padding-top: 19px; ">GIRLS</strong>
+            <div>
+                <img src="https://www.limelight.pk/cdn/shop/files/Girls-Summer.png?v=1716882848" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- thick-line -->
+<br>
+<div class="thick-line"></div>
+
+<!-- moving bar -->
+ <div style="margin-left:30px;"><h2><b>ACCESSORIES</b></h2></div>
+ <div class="scroll-container circular-images">
+    <div class="scroll-item">
+        <img src="images/shoukder.bags.jpeg" alt="Bags">
+        <p>Bags</p>
+    </div>
+    <div class="scroll-item">
+        <img src="images/women wallets.jpeg" alt="Wallets">
+        <p>Wallets</p>
+    </div>
+    <div class="scroll-item">
+      <img src="images/women mufflers.jpeg" alt="Mufflers">
+        <p>Mufflers</p>
+    </div>
+    <div class="scroll-item">
+      <img src="images/women scarf.jpeg" alt="Scarfs">
+      <p>Scarfs</p>
+  </div><div class="scroll-item">
+    <img src="images/women dupattas.jpeg" alt="Dupattas">
+    <p>Dupattas</p>
+</div><div class="scroll-item">
+  <img src="images/women footwear.jpeg" alt="Footwear">
+  <p>Footwear</p>
+</div><div class="scroll-item">
+  <img src="images/women jewelery.jpeg" alt="Jewelery">
+  <p>Jewelery</p>
+</div>
+<div class="scroll-item">
+  <img src="images/women watches.jpeg" alt="Watches">
+  <p>watches</p>
+</div>
+<div class="scroll-item">
+  <img src="images/women sunglasses.jpeg" alt="Sunglasses">
+  <p>Sunglasses</p>
+</div>
+<div class="scroll-item">
+  <img src="images/women hair bands.jpeg" alt="Hair">
+  <p>Hair</p>
+</div>
+<div class="scroll-item">
+  <img src="images/women compact mirrors.jpeg" alt="Compact Mirrors">
+  <p>Compact Mirrors</p>
+</div>
+<div class="scroll-item">
+  <img src="images/women belts.jpeg" alt="Belts">
+  <p>Belts</p>
+</div>
+<div class="scroll-item">
+  <img src="images/women keychain.jpeg" alt="Keychain">
+  <p>Keychain</p>
+</div>
+</div>
+
+<!-- second carousel -->
+<div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1600">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.limelight.pk/cdn/shop/files/50_-banner_2_09a49b27-0785-4676-8ec5-fffc70e71704.jpg?v=1710240376" class="d-block w-100" style="width:100px;" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.limelight.pk/cdn/shop/files/SALE-BANNER.png?v=1721887733" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- thick-line -->
+<div class="thick-line"></div>
+
+<br>
+<div class="women-wear"><h1>New Arrivals</h1></div>
+
+<!-- div images women row -->
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC09368_533x.jpg?v=1720949456" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <b>3 Pieces Chiffon Suit-Embroidered (Pret)</b>
+            <p>
+              <span class="text-deco">Rs. 15,999</span> <span>Rs. 13,759</span>
+            </p>
+            <div class="discount-badge">14% OFF</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-3">
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC09072_533x.jpg?v=1720960877" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <b>2 Pieces Lawn Suit-Embroidered (pret)</b>
+            <p>
+              <span class="text-deco">Rs. 7,199</span> <span>Rs. 6,191</span>
+            </p>
+            <div class="discount-badge">14% OFF</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC02421_533x.jpg?v=1720611663" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <b>3 Pieces Yarn Dyed Suit-Embroidered (pret)</b>
+            <p>
+              <span class="text-deco">Rs. 9,899</span> <span>Rs. 8,513</span>
+            </p>
+            <div class="discount-badge">14% OFF</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC09146_0da52f00-9aa1-42c4-9c50-6d5dd4ed00ef_533x.jpg?v=1720960372" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <b>Lawn Shirt Suit-Embroidered (Pret)</b>
+            <p>
+              <span class="text-deco">Rs. 5,899</span> <span>Rs. 5,073</span>
+            </p>
+            <div class="discount-badge">14% OFF</div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<!-- second women row -->
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC_0713_e7a1e2ec-5f49-49b0-9e76-847256f86c98.jpg?v=1719296236" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <b>Jacquard Shirt-Embroidered (Pret)</b>
+          <p>
+            <span class="text-deco">Rs. 5,699</span> <span>Rs. 4,091</span>
+          </p>
+          <div class="discount-badge">14% OFF</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC02347_533x.jpg?v=1721043013" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <b>2 Pieces Yarn Dyed Suit-Embroidered (pret)</b>
+          <p>
+            <span class="text-deco">Rs. 5,999</span> <span>Rs. 5,159</span>
+          </p>
+          <div class="discount-badge">14% OFF</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC07000_0cf30599-120c-4f60-a3dd-946c91b3f452_533x.jpg?v=1720176726" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <b>2 Pieces Raw Silk lahenga-Embroidered (pret)</b>
+          <p>
+            <span class="text-deco">Rs. 27,999</span> <span>Rs. 24,079</span>
+          </p>
+          <div class="discount-badge">14% OFF</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3">
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC08001_15a0ae94-576f-48c0-bd1b-5ce8b8d87214_533x.jpg?v=1719397849" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <b>Lawn Shirt-Paste print(Unstiched)</b>
+          <p>
+            <span class="text-deco">Rs. 5,899</span> <span>Rs. 5,073</span>
+          </p>
+          <div class="discount-badge">14% OFF</div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<!-- first men row -->
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSCF0507_533x.jpg?v=1717058754" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <b>Jacquard Kurta</b>
+          <p>
+            <span class="text-deco">Rs. 2,999</span> <span>Rs. 2,399</span>
+          </p>
+          <div class="discount-badge">22% OFF</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSCF0200_1a27ce01-2e0d-4474-b413-5e3fb4bb1d3c_533x.jpg?v=1717058937" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <b>Wash and Wear Suit</b>
+          <p>
+            <span class="text-deco">Rs. 5,299</span> <span>Rs. 3,709</span>
+          </p>
+          <div class="discount-badge">20% OFF</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSCF0845_533x.jpg?v=1717058983" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <b>Jacquard kurta</b>
+          <p>
+            <span class="text-deco">Rs. 2,999</span> <span>Rs. 2,099</span>
+          </p>
+          <div class="discount-badge">30% OFF</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3">
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSCF0886_9f2b12f4-565f-4173-b7aa-a0e24e601491_533x.jpg?v=1722230044" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <b>Wash And Wear Suit</b>
+          <p>
+            <span class="text-deco">Rs. 4,999</span> <span>Rs. 3,999</span>
+          </p>
+          <div class="discount-badge">20% OFF</div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+<!-- second men row -->
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC01152_73125368-747a-4769-8021-078a346b8114_533x.jpg?v=1712040182" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <b>Cotton Suit</b>
+          <p>
+            <span class="text-deco">Rs. 4,799</span> <span>Rs. 3,359</span>
+          </p>
+          <div class="discount-badge">30% OFF</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/p8880kr-mds-lgn_2_533x.jpg?v=1712039887" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <b>Dobby Suit</b>
+          <p>
+            <span class="text-deco">Rs. 4,899</span> <span>Rs. 3,429</span>
+          </p>
+          <div class="discount-badge">22% OFF</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/CAM_4824_533x.jpg?v=1686571697" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <b>Cotton Suit Embroidered</b>
+          <p>
+            <span class="text-deco">Rs. 9,899</span> <span>Rs. 8,513</span>
+          </p>
+          <div class="discount-badge">30% OFF</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3">
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/products/CAM_0738_533x.jpg?v=1680776085" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <b>Dobby Suit-Embroidered</b>
+          <p>
+            <span class="text-deco">Rs. 5,899</span> <span>Rs. 5,073</span>
+          </p>
+          <div class="discount-badge">20% OFF</div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<!-- first glasses row-->
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC05975_f7f06fbd-c331-4e6c-9ebe-bb9aca609145_533x.jpg?v=1713940265" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <b>Printed Square Sunglasses</b>
+          <p>
+            <span class="text-deco">Rs. 1,199</span> <span>Rs. 1,031</span>
+          </p>
+          <div class="discount-badge">14% OFF</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC05960_533x.jpg?v=1713351920" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <b>Narrow Square Sunglasses</b>
+          <p>
+            <span class="text-deco">Rs. 1,199</span> <span>Rs. 1,031</span>
+          </p>
+          <div class="discount-badge">14% OFF</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC05997_533x.jpg?v=1713352557" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <b>Over Sized Sunglasses</b>
+          <p>
+            <span class="text-deco">Rs. 1,499</span> <span>Rs. 1,289</span>
+          </p>
+          <div class="discount-badge">14% OFF</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3">
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC05914_533x.jpg?v=1714113450" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <b>Square Sunglasses</b>
+          <p>
+            <span class="text-deco">Rs. 1,199</span> <span>Rs. 1,031</span>
+          </p>
+          <div class="discount-badge">14% OFF</div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<!-- Bags  row -->
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC_7629_533x.jpg?v=1717136115" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <b>Snake Texture Handbag</b>
+          <p>
+            <span class="text-deco">Rs. 2,699</span> <span>Rs. 2,321</span>
+          </p>
+          <div class="discount-badge">14% OFF</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC_7658_533x.jpg?v=1717141628" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <b>Patch Pattern Clutch</b>
+          <p>
+            <span class="text-deco">Rs. 2,599</span> <span>Rs. 2,235</span>
+          </p>
+          <div class="discount-badge">14% OFF</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC_7265_e8f2e8c1-958c-429a-b664-1964685c0e47_533x.jpg?v=1717142331" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <b>Snake Textured Clutch</b>
+          <p>
+            <span class="text-deco">Rs. 3,499</span> <span>Rs. 3,009</span>
+          </p>
+          <div class="discount-badge">14% OFF</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3">
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC_4791_0ef6a812-347c-4777-87c7-9c64b9c04470_533x.jpg?v=1723108957" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <b>Twon Tone Handbag</b>
+          <p>
+            <span class="text-deco">Rs. 1,899</span> <span>Rs. 1,329</span>
+          </p>
+          <div class="discount-badge">14% OFF</div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+<!-- Watches row -->
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC_5477_533x.jpg?v=1713783405" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <b>Embellished Watch</b>
+          <p>
+            <span class="text-deco">Rs. 4,999</span> <span>Rs. 4,299</span>
+          </p>
+          <div class="discount-badge">14% OFF</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC_5355_fd496b50-5703-4c79-a5c2-443850bb12a2_533x.jpg?v=1720438294" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <b>Rhinestone Embellished Watch</b>
+          <p>
+            <span class="text-deco">Rs. 4,99</span> <span>Rs. 4,299</span>
+          </p>
+          <div class="discount-badge">14% OFF</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC_9175_4678159b-d2c9-4df4-b4d6-98c724bd84f7_533x.jpg?v=1720438028" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <b>Classic Watch</b>
+          <p>
+            <span class="text-deco">Rs. 4,499</span> <span>Rs. 3,869</span>
+          </p>
+          <div class="discount-badge">14% OFF</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3">
+      <div class="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC_4370_533x.jpg?v=1711623155" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <b>Stone Embellished Watch</b>
+          <p>
+            <span class="text-deco">Rs. 4,699</span> <span>Rs. 4,041</span>
+          </p>
+          <div class="discount-badge">14% OFF</div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<!-- next page -->
+<li class="page-navigation">
+  <a href="" style="margin-left:20px;" class="nav-link">1</a>
+  <a href="" style="margin-left:20px;" class="nav-link">2</a>
+  <a href="" style="margin-left:20px;" class="nav-link">....</a>
+  <a href="" style="margin-left:20px;" class="nav-link next-logo next-button">></a></li>
+  <!-- Next Page Button -->
+  <div class="first-last-div">
+<div class="container">
+<div class="row">
+  <div class="col-6 coloumn-1">
+<pre>
+  <b>Customer Care</b>
+Order Tracking
+Shipping & Handling
+Exchange Policy
+Order Cancellation Policy
+Privacy Policy
+Terms of Use
+FAQ’s
+</pre>
+  </div>
+  <div class="col-6 coloumn-2"><pre>
+  <b>Information</b>
+About Us
+Contact Us
+Careeres
+Store Locator
+Limelight Trends</pre>
+  </div>
+</div>
+<div class="row">
+  <div class="row">
+    <div class="col-12 social-icon">
+        <a href="https://www.facebook.com/limelight.pret/" class="logoo-link">
+            <svg width="30" height="30" viewBox="0 0 61 62" fill="none">
+                <path d="M57.6329 0.574707H3.36433C1.50601 0.575638 -0.000465285 2.08305 1.07801e-07 3.94183V58.2104C0.000930894 60.0687 1.50834 61.5752 3.36712 61.5747H57.6329C59.4921 61.5752 60.9995 60.0682 61 58.209C61 58.2085 61 58.2081 61 58.2076V3.93903C60.9991 2.08072 59.4917 0.574242 57.6329 0.574707Z" fill="#4267B2"></path>
+                <path d="M42.541 61.5747V37.8881H50.5333L51.7306 28.6168H42.541V22.712C42.541 20.0339 43.2851 18.2091 47.1288 18.2091H52V9.9392C51.1525 9.82658 48.2448 9.57471 44.8613 9.57471C37.797 9.57471 32.9623 13.8814 32.9623 21.7937V28.6168H25V37.8881H32.9623V61.5747H42.541Z" fill="white"></path>
+            </svg>
+        </a>
+    
+    <a href="https://www.instagram.com/limelight.pret/" class="logo-link"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0015/2829/9567/files/insta.png?v=1633504162" alt="limelight Instagram" width="auto" height="31px">
+      <span class="visually-hidden">Instagram</span>
+      </a>
+      <a href="https://www.youtube.com/limelightofficial" class="logo-link">
+  
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 62 43" fill="none">
+          <path d="M60.743 6.95998C60.0396 4.346 57.9787 2.28555 55.3652 1.58166C50.5902 0.274902 31.4902 0.274902 31.4902 0.274902C31.4902 0.274902 12.3908 0.274902 7.61578 1.53185C5.05254 2.23527 2.94135 4.34647 2.23792 6.95998C0.981445 11.7345 0.981445 21.6364 0.981445 21.6364C0.981445 21.6364 0.981445 31.5882 2.23792 36.3129C2.94181 38.9264 5.00227 40.9873 7.61624 41.6912C12.441 42.998 31.4907 42.998 31.4907 42.998C31.4907 42.998 50.5902 42.998 55.3652 41.741C57.9792 41.0376 60.0396 38.9767 60.7435 36.3632C62 31.5882 62 21.6867 62 21.6867C62 21.6867 62.0503 11.7345 60.743 6.95998Z" fill="#FF0000"></path>
+          <path d="M25.4092 30.7843L41.2919 21.6366L25.4092 12.4888V30.7843Z" fill="white"></path>
+        </svg>
+      <span class="visually-hidden">YouTube</span>
+                      </a>
+    </div>
+</div>
+<div class="row">
+  <div class="col-12 acceptt">We Accept</div>
+</div>
+<div class="row">
+  <div class="col-12"></div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <ul class="list list-payment" role="list">
+      <li class="list-payment__item"></li>
+      <li class="list-payment__item"></li>
+      <li class="list-payment__item">
+        <svg class="icon icon--full-color" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-visa">
+          <title id="pi-visa">Visa</title>
+          <path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path>
+          <path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path>
+          <path d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z" fill="#142688"></path>
+        </svg>
+      </li>
+      <li class="list-payment__item">
+        <svg class="icon icon--full-color" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-master">
+          <title id="pi-master">Mastercard</title>
+          <path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path>
+          <path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path>
+          <circle fill="#EB001B" cx="15" cy="12" r="7"></circle>
+          <circle fill="#F79E1B" cx="23" cy="12" r="7"></circle>
+          <path fill="#FF5F00" d="M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z"></path>
+        </svg>
+      </li>
+    </ul>
+    
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 acceptt">
+    © 2024, Limelightpk , Powered by Alchemative
+  </div>
+</div>
+</div>
+  </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
