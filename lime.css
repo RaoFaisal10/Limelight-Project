@@ -24,8 +24,8 @@ align-items: end;
    height: 55px;  
 }
 .circular-images img {
-    width: 155px;
-    height: 155px; 
+    width: 125px;
+    height: 125px; 
     border-radius: 100%;
     object-fit: cover;
 }
@@ -73,6 +73,12 @@ height:400px;
 .text-deco{
     text-decoration:line-through
 }
+.card {
+    width: 89%;
+    max-width: 302px;
+    margin: 0 auto; 
+  }
+  
 .card .discount-badge {
     position: absolute;
     top: 10px;
@@ -202,4 +208,13 @@ margin-top: 10px;
   .list-payment__item {
     margin: 0 10px; 
   }
-  
+.circle-image{
+    display: flex;
+    justify-content:end;
+    align-items: end;
+}
+.circlee-image{
+    display: flex;
+    justify-content:start;
+    align-items: start;
+}
