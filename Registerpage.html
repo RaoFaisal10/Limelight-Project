@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Women Page</title>
+    <title>Embroidered Women Page</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="lime.css">
     <link rel="stylesheet" href="lime2.css">
-  </head>
+    <link rel="stylesheet" href="/lime.js">
+    <style>
+        .container {
+          max-width: 500px;
+          margin-top: 50px;
+        }
+      </style>
+</head>
 <body>
     <div style="height:24px; position:sticky">
         <p class="text-center custom-text-color h8">Free delivery for orders above Rs 4999 within Pakistan</p>
@@ -28,19 +35,18 @@
             </svg>
         </div>
 
-       <!-- Search  Icon -->
-       <div style="position: absolute; left: 100px; top: 50%; transform: translateY(-50%); ">
-        <input class="search__input field__input" id="Search-In-Modal" type="search" 
-        style="width: 200px; border-radius: 100px;" placeholder="Search">
-    </div>
+        <!-- Search  Icon -->
+        <div style="position: absolute; left: 100px; top: 50%; transform: translateY(-50%); ">
+          <input class="search__input field__input" id="Search-In-Modal" type="search" 
+          style="width: 200px; border-radius: 100px;" placeholder="Search">
+      </div>
 
-       <!-- Luxe logo -->
-       <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
-        <a href="lime.html">
-            <img src="/images/luxe main logo.png" loading="lazy" width="170" height="50" alt="Limelightpk">
-        </a>
-    </div>
-
+        <!-- Luxe logo -->
+        <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
+          <a href="lime.html">
+              <img src="/images/luxe main logo.png" loading="lazy" width="170" height="50" alt="Limelightpk">
+          </a>
+        </div>
 
             <!-- cart logo -->
             <a href="/cart.html" class="cart-logo " id="cart-icon-bubble">
@@ -55,8 +61,7 @@
                 <div class="cart-count-bubble"><span aria-hidden="true"></span><span class="visually-hidden">0 items</span></div>
             </a>
         </div>
-    </div>
-
+    </div>    
     <!-- desktop icons nav -->
     <nav class="navbar navbar-expand-lg navbrr bg-light">
       <div class="container-fluid justify-content-between">
@@ -93,194 +98,39 @@
           </a>
       </div>
   </nav>
+  <div class="container">
+    <div id="register-form">
+        <h2>Register</h2><br>
+        <div class="form-group">
+          <label for="register-email">Email</label>
+          <input type="email" class="form-control" id="register-email" placeholder="Enter email">
+        </div><br>
+        <div class="form-group">
+          <label for="register-password">Password</label>
+          <input type="password" class="form-control" id="register-password" placeholder="Enter password">
+        </div><br><br><a href="/Registerpage.html">
+        <button class="btn btn-dark" onclick="register()">Register</button>
+     </a> </div><br><br>
+    <div class="row car-t">
+        <div class="col-12">
+            Back to the <a href="/loginpage.html" class="text-black">Login</a> Page
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
   
-  <!-- video -->
-  <div class="container">
-    <div class="row">
-        <div class="col-12 ">
-            <video class="videoo" src="/videos/women video.mp4" class="object-fit-contain" autoplay></video>
-        </div>
-    </div>
-  </div>  
-
-  <!-- thick line -->
-  <div class="container">
-  <div class="thickk-line">
-  </div></div>
-  <!-- unstiched clothes -->
-  <div class="women-wear"><h1>UNSTICHED</h1></div>
-  <div class="circular-image1 circular-images"><div class="container text-center">
-    <div class="row" style="width:100%">
-        
-        <div class="col-2"></div>
-      <div class="col-3 width:50%; text-align: center;"><a href="/printed.html">
-        <img src="https://www.limelight.pk/cdn/shop/files/dailywear_5e709826-db47-41b8-b0e4-0bc3a84a343f_300x.png?v=1722244654" alt=""></a><br><b>Printed</b>
-      </div>
-      <div class="col-2 width:50%; text-align: center;"><a href="/embroidered.html">
-    <img src="https://www.limelight.pk/cdn/shop/files/glam_300x.png?v=1722244686" alt=""></a><br><b>Embroidered</b>
-      </div>
-      <div class="col-3 width:50%; text-align: center;"><a href="/bottoms.html">
-        <img src="https://www.limelight.pk/cdn/shop/files/menu_unstitched-trousers_dyed.png?v=827217545096498499" alt=""></a><br><b>Bottoms</b>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- thick line -->
-<div class="container">
-    <div class="thickk-line">
-    </div></div>
-
-<!-- others -->
-<div class="women-wear"><h1>Others</h1></div>
-<div class="container text-center circular-images ">
-  <div class="row"><div class="col-2"></div>
-    <div class="col-2 "><a href="/co-ords.html">
-      <img src="https://www.limelight.pk/cdn/shop/files/coords_300x.png?v=1722245324" alt=""></a><br><b>CO-ORDS</b>
-    </div>
-    <div class="col-2 "><a href="/Eastern-tops.html">
-      <img src="https://www.limelight.pk/cdn/shop/files/eastern_tops_8ec740e5-d124-4d3b-9d97-3d300b20a667_300x.png?v=1722245388" alt=""></a><br><b>EASTERN TOPS</b>
-    </div>
-    <div class="col-2 "><a href="/western.html">
-      <img src="https://www.limelight.pk/cdn/shop/files/western_2ab2c854-d117-4363-b08d-f7690594342e_300x.png?v=1722245440" alt=""></a><br><b>WESTERN</b>
-    </div>
-    <div class="col-2 "><a href="/fragrances.html">
-      <img src="https://www.limelight.pk/cdn/shop/files/menu_women_fragrances-cosmetics_perfumes_141x139.png?v=12533028217807003668" alt=""></a><br><b>Fragrances </b>
-    </div>
-  </div>
-</div>
-<br><br><br><!-- thick line -->
-<div class="container-fluid">
-    <div class="thickk-linee">
-    </div></div>
-<br>
-<!-- card images women row -->
-<div class="container-fluid">
-    <div class="row">
-      <div class="col-3">
-        <div class="card bg-base-100 w-96 shadow-xl">
-          <figure>
-            <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC09368_533x.jpg?v=1720949456" alt="Shoes" />
-          </figure>
-          <div class="card-body">
-            <b>Cambic Shirt-Printed (Unstiched)</b>
-            <p>
-              <span class="text-deco">Rs. 1,299</span> <span>Rs. 1,117</span>
-            </p>
-            <div class="discount-badge">14% OFF</div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-3">
-        <div class="card bg-base-100 w-96 shadow-xl">
-          <figure>
-            <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC09072_533x.jpg?v=1720960877" alt="Shoes" />
-          </figure>
-          <div class="card-body">
-            <b>Cambric Shirt-Printed (Unstiched)</b>
-            <p>
-              <span class="text-deco">Rs. 1,299</span> <span>Rs. 1,117</span>
-            </p>
-            <div class="discount-badge">14% OFF</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="card bg-base-100 w-96 shadow-xl">
-          <figure>
-            <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC02421_533x.jpg?v=1720611663" alt="Shoes" />
-          </figure>
-          <div class="card-body">
-            <b>2 Pieces Cambric Suit-Embroidered (Unstiched)</b>
-            <p>
-              <span class="text-deco">Rs. 9,899</span> <span>Rs. 8,513</span>
-            </p>
-            <div class="discount-badge">14% OFF</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-3">
-        <div class="card bg-base-100 w-96 shadow-xl">
-          <figure>
-            <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC09146_0da52f00-9aa1-42c4-9c50-6d5dd4ed00ef_533x.jpg?v=1720960372" alt="Shoes" />
-          </figure>
-          <div class="card-body">
-            <b>2 Pieces Cambric Suit-Printed(Unstiched)</b>
-            <p>
-              <span class="text-deco">Rs. 5,899</span> <span>Rs. 5,073</span>
-            </p>
-            <div class="discount-badge">14% OFF</div>
-          </div>
-        </div>
-      </div>
-  </div>
-</div>
-<!-- second women row -->
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-3">
-      <div class="card bg-base-100 w-96 shadow-xl">
-        <figure>
-          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC_0713_e7a1e2ec-5f49-49b0-9e76-847256f86c98.jpg?v=1719296236" alt="Shoes" />
-        </figure>
-        <div class="card-body">
-          <b>Cambric Shirt-Paste Print (Unstiched)</b>
-          <p>
-            <span class="text-deco">Rs. 5,699</span> <span>Rs. 4,091</span>
-          </p>
-          <div class="discount-badge">14% OFF</div>
-        </div>
-      </div>
-    </div>
-    <div class="col-3">
-      <div class="card bg-base-100 w-96 shadow-xl">
-        <figure>
-          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC02347_533x.jpg?v=1721043013" alt="Shoes" />
-        </figure>
-        <div class="card-body">
-          <b>2 Piece Cambric Shirt-Paste Print (Unstiched)</b>
-          <p>
-            <span class="text-deco">Rs. 5,999</span> <span>Rs. 5,159</span>
-          </p>
-          <div class="discount-badge">14% OFF</div>
-        </div>
-      </div>
-    </div>
-    <div class="col-3">
-      <div class="card bg-base-100 w-96 shadow-xl">
-        <figure>
-          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC07000_0cf30599-120c-4f60-a3dd-946c91b3f452_533x.jpg?v=1720176726" alt="Shoes" />
-        </figure>
-        <div class="card-body">
-          <b>2 Pieces Cambric Shirt-Paste Print (Unstiched)</b>
-          <p>
-            <span class="text-deco">Rs. 27,999</span> <span>Rs. 24,079</span>
-          </p>
-          <div class="discount-badge">14% OFF</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-3">
-      <div class="card bg-base-100 w-96 shadow-xl">
-        <figure>
-          <img class="new-arrival-images" src="https://www.limelight.pk/cdn/shop/files/DSC08001_15a0ae94-576f-48c0-bd1b-5ce8b8d87214_533x.jpg?v=1719397849" alt="Shoes" />
-        </figure>
-        <div class="card-body">
-          <b>2 Piece Cambric Shirt-Paste Print (Unstiched)</b>
-          <p>
-            <span class="text-deco">Rs. 5,899</span> <span>Rs. 5,073</span>
-          </p>
-          <div class="discount-badge">14% OFF</div>
-        </div>
-      </div>
-    </div>
-</div>
-</div>
-<!-- Next Page Button -->
-<div class="first-last-div">
+  <div class="first-last-div">
     <div class="container">
     <div class="row">
       <div class="col-6 coloumn-1">
@@ -301,7 +151,7 @@ About Us
 Contact Us
 Careeres
 Store Locator
-Limelight Trends</pre>  
+Limelight Trends</pre>
       </div>
     </div>
     <div class="row">

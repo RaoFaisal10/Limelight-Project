@@ -23,3 +23,45 @@ height: 350px
     background-color: rgb(1, 1, 1);
     margin-top: 4px;
 }
+.backkk{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:1600px;
+    height:80px;
+}
+.img-back{
+width:1507px;
+height:645px;
+margin-bottom: 0;
+}
+
+  .position-relative {
+    position: relative;
+}
+.boxx {
+    position: absolute;
+    top: 52%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 400px; 
+    height: 350px; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    box-shadow: 0px 0 px rgba(10, 10, 10, 10.5); 
+    backdrop-filter: blur(90%); 
+    border: 01px solid #000; 
+    border-radius: 20px;
+}
+.underr{
+    margin-bottom: 0px;
+}
+.gapp{
+    margin-left:30px;
+}
+.car-t{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
