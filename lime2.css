@@ -1,7 +1,13 @@
-.videoo{
-justify-content: center;
-text-align: center;
-height: 350px
+.videoo {
+  width: 100%; 
+  height: auto;
+  object-fit: cover;
+}
+.containe {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 20px;
 }
 .thickk-line {
     display: flex;
@@ -67,17 +73,13 @@ text-align: center;
 }
 
 
-
-
-
-/* Style for the big navbar */
 .big-hover-navbar {
     position: absolute;
-    top: 100%; /* Below the main navbar */
+    top: 100%;
     left: 0;
     width: 100vw;
     height: 0;
-    background-color: rgba(0, 0, 0, 0.85); /* Dark background with transparency */
+    background-color: rgba(0, 0, 0, 0.85);
     color: white;
     overflow: hidden;
     transition: height 0.5s ease, opacity 0.5s ease;
@@ -92,42 +94,34 @@ text-align: center;
     opacity: 1;
     width:100%;
   }
-  
   .hover-expand:hover ~ * {
     filter: blur(5px); 
   }
-  
   .nav-links {
     list-style: none;
     margin: 0;
     padding: 20px 0;
   }
-  
   .nav-links li {
     margin: 10px 0;
   }
-  
   .nav-links a {
     color: white;
     text-decoration: none;
     font-size: 18px;
   }
-  
   .nav-links a:hover {
     text-decoration: underline;
   }
-  
   .hover-nav-line {
     width: 100%;
     height: 1px;
     background-color: white;
     margin: 10px 0;
   }
-  
   body {
     transition: filter 0.5s ease;
   }
-  
   .hover-nav-line{
     display: flex;
     justify-content: center; 
@@ -136,3 +130,70 @@ text-align: center;
     background-color: rgb(255, 255, 255);
     margin-top: 4px;
   }
+  .imagees{
+    width:98%;
+    height:auto;
+    border:solid 2px black;
+    }
+    .conta_inerr{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+margin-left: 30px;  
+}
+    .next__btn{
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    border-radius: 100%;
+    width:30px;
+    height: 30px;
+    position:absolute;
+    top: 340px;
+    border: black solid 2px;
+    right: 60px;
+    cursor: pointer;
+    }
+    .next__btn:hover{
+      background-color: black;
+      color: white;
+      transform: scale(1.50); 
+    }
+    .previous__btn{
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    border: black solid 2px;
+    border-radius: 100%;
+    width:30px;
+    height: 30px;
+    position:absolute;
+    top: 340px;
+    left: 60px;
+    cursor: pointer;
+    }
+    .previous__btn:hover{
+      background-color: black;
+      color: white;
+      transform: scale(1.50); 
+    }
+    .new-arrival-images {
+      width: 100%;      
+      height: auto;      
+      object-fit: cover; 
+      border-radius: 10px;
+  }
+  
+  .card {
+      overflow: hidden; 
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover{
+    transform: scale(1.05); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  .no-more{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
