@@ -58,12 +58,28 @@ align-items: end;
     flex: 1 1 310px;         
     max-width: 310px;        
 }
+
+
+
 .scroll-container {
     display: flex;
-    overflow-x: scroll;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 30px;
     width: 100%;
     padding: 10px;
-    scroll-snap-type: x mandatory;
+}
+
+.scroll-item {
+    flex: 0 0 auto; 
+    text-align: center;
+}
+
+.scroll-item img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover;
 }
 .new-arrival-images{
 height:400px;

@@ -1,0 +1,111 @@
+.product-detail {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .product-image {
+    flex: 1;
+  }
+  .product-image img {
+    max-width: 100%;
+  }
+  .product-info {
+    flex: 1;
+    padding: 20px;
+  }
+  .product-info h2 {
+    font-size: 2em;
+  }
+  .product-info .price {
+    font-size: 1.5em;
+    color: rgb(255, 8, 0);
+  }
+  .size-selection {
+    margin: 20px 0;
+  }
+  .size-selection label {
+    font-weight: bold;
+  }
+  .size-selection select {
+    padding: 5px;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh; 
+}
+.add-to-cart {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 100px;
+} 
+.first-last-div{
+    margin-top:100px;
+    width:100%;
+    height:430px;
+    background-color:rgb(230, 229, 227)
+}
+.coloumn-1 {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-start; 
+    padding: 15px; 
+}
+.coloumn-2 {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    padding: 15px; 
+}
+.coloumn-1 pre, .coloumn-2 pre {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.coloumn-1 pre b, .coloumn-2 pre b {
+    font-weight: bold;
+    font-size: 16px; 
+    display: block; 
+    margin-bottom: 10px;
+}
+.social-icon {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100%;
+}
+.logo-link{
+    margin-left:25px;
+    margin-top: 15px;
+}
+.logoo-link{
+    margin-top: 15px;
+}
+.acceptt{
+    margin-top:20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.size-btn.active {
+  background-color: #6c757d; 
+  color: white; 
+  border-color: #6c757d; 
+}
+.price{
+  display: flex;
+  margin-left: 108px;
+  color: red;
+}
+.ship{
+  color: red;
+  display: flex;
+  justify-content: end;
+}

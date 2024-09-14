@@ -2,6 +2,7 @@
   width: 100%; 
   height: auto;
   object-fit: cover;
+  
 }
 .containe {
   display: flex;
@@ -197,3 +198,32 @@ margin-left: 30px;
     align-items: center;
   }
   
+
+
+  .circular-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+}
+
+.image-item {
+    text-align: center;
+}
+
+.image-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.keep-shop{
+  margin-top: 100px;
+}
+.card{
+  cursor:pointer;
+}
